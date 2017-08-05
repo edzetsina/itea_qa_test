@@ -43,7 +43,6 @@ public class ITEATests {
      Assert.assertTrue(googlePage.isPageLoaded(), "Search results page is not loaded");
      int resultsCount = googlePage.getSearchResultsCount();
      Assert.assertEquals(resultsCount, 10, "Results count doesn't match real");
-//     Assert.assertTrue(googlePage.isAllSearchResultsContainKeywords("itea"), "Not each of search result contains Keywords 'ITEA' ");
 
      googlePage.switchToSecondSearchPage();
      Assert.assertEquals(resultsCount, 10, "Results count doesn't match real");
